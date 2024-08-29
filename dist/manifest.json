@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Image Resize Extension",
+  "version": "1.0.0",
+  "description": "Resize images automatically",
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "downloads",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  }
+}
